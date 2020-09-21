@@ -1,0 +1,29 @@
+{
+    "name": "travel2.0",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build"
+    },
+    "dependencies": {
+        "axios": "^0.19.2",
+        "better-scroll": "^1.15.2",
+        "fastclick": "^1.0.6",
+        "vue-awesome-swiper": "^3.1.3",
+        "core-js": "^3.6.5",
+        "vue": "^2.6.11",
+        "vue-router": "^3.2.0",
+        "vuex": "^3.4.0",
+        "vue-lazyload": "^1.3.3"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-router": "~4.5.0",
+        "@vue/cli-plugin-vuex": "~4.5.0",
+        "@vue/cli-service": "~4.5.0",
+        "sass": "^1.26.5",
+        "sass-loader": "^7.3.1",
+        "vue-template-compiler": "^2.6.11"
+    }
+}
