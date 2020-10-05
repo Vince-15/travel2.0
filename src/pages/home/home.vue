@@ -46,7 +46,7 @@ export default {
     },
     mounted(){
         this.getData();
-    }
+    },
 }
 </script>
 <style scoped lang='scss'>

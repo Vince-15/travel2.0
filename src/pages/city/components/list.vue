@@ -1,6 +1,7 @@
 <template>
     <div class="wrapper" ref="wrapper">
         <div class="content">
+            <!-- <div class="blank"></div> -->
             <div>
                 <div class="title">您的位置</div>
                 <div class="current-city-container">
@@ -45,6 +46,7 @@ export default {
             this.$router.push('/');
         },
         elementHeight(){
+            console.log(this.letters);
             this.letters.forEach(letter=>{
                 const element=this.$refs[letter][0];
                 console.log(element.clientHeight);
@@ -60,13 +62,13 @@ export default {
         })
     },
     mounted(){
-        console.log(1)
-        this.elementHeight();
-        this.scroll = new BScroll(this.$refs.wrapper);
+        this.scroll = new BScroll(this.$refs.wrapper,{
+            click:true,
+            probeType:2
+        });
         this.scroll.on('scroll',pos=>{
-               console.log(1);
-           });
-        
+            console.log(pos.y);
+        });
     },
     watch:{
         letter(){
@@ -84,9 +86,13 @@ export default {
     overflow: hidden;
     height: 100%;
     position: absolute;
-    top: 1.5rem;
+    margin-top: 1.5rem;
+    top: 0;
     left: 0;
     right: 0;
+    // .blank{
+    //     height: 1.5rem;
+    // }
     .title{
         height: .40rem;
         background-color: #eee;

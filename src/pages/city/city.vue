@@ -1,6 +1,6 @@
 <template>
     <div class="city">
-        <city-search @handleClickInput=handleClickInput :cities=cities></city-search>
+        <!-- <city-search @handleClickInput=handleClickInput :cities=cities></city-search> -->
         <city-list 
         :hotCities=hotCities
         :cities=cities

@@ -27,7 +27,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-// .wrapper::v-deep.swiper-pagination-bullet-active{
+// .wrapper>>>.swiper-pagination-bullet-active{
 //     background: #fff;
 // }
 ::v-deep .swiper-pagination-bullet-active{
